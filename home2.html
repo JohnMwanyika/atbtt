@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="assets/css/myStyle.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/search.css" />
 </head>
 
 <body>
@@ -59,10 +61,13 @@
                 </li>
               </ul>
             </div>
-            <div class="user d-flex align-items-center justify-content-between">
-              <a href="page-login.html" class="btn btn-warning py-2 px-4 d-lg-none d-none">LOGIN</a>
+
+            <div
+              class="user d-flex align-items-center justify-content-between bg-white rounded-pill border p-2 shadow-sm">
+              <!-- <a href="page-login.html" class="btn btn-primary py-2 px-4 d-lg-none d-none">LOGIN</a> -->
+              <i class="fas fa-bars font-28 px-3"></i>
               <a href="#" class="text-dark d-lg-block d-none">
-                <i class="fas fa-user-circle font-40 mt-1"></i>
+                <i class="fas fa-user-circle font-30 mt-1"></i>
               </a>
             </div>
 
@@ -72,58 +77,55 @@
     </header>
 
     <div class="property-grid-listing">
-      <div class="blog-single-breadcrumb mb-4">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="breadcrumb-content">
-                <ul class="breadcrumb">
-                  <!-- <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li> -->
-                  <li class="breadcrumb-item active" aria-current="page">Simple Listing – Grid View</li>
-                </ul>
-                <h1 class="breadcrumb-title font-30 mt-3">Latest property</h1>
-              </div>
-            </div>
-            <div class="col-md-4 text-end">
-              <button type="button" class="btn btn-warning px-4 py-2" data-bs-toggle="modal"
-                data-bs-target="#searchModal">Show Filter <i class="fas fa-sort ms-2"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="property-listing-section pb-5">
+      <div class="property-listing-section pb-5" style="padding-top: 120px;">
         <div class="container-fluid px-4">
-
-          <div class="grid-search-result">
-            <div class="card border-0">
-              <div class="card-body px-4">
+          <div class="grid-search-result d-flex justify-content-center">
+            <div class="card border-0 rounded shadow w-80 border border-secondary searchBox">
+              <div class="card-body py-0">
                 <div class="row align-items-center">
-                  <div class="col-lg-8 col-md-6">
-                    <p class="mb-md-0 text-dark font-14">10 Search results</p>
+
+                  <div class="col-lg-3 col-md-4 py-1 searchItem">
+                    <div class="border-end  p-1 searchItemBox">
+                      <label for="destination"><span class="fw-bold text-dark fs-6 text ms-2">Where</span></label>
+                      <input type="text" class="form-control form-control-sm border-0 text-secondary" id="destination"
+                        placeholder="Search destination">
+                    </div>
                   </div>
-                  <div class="col-lg-2 col-md-3">
-                    <select class="form-select font-14 form-select-md mb-3 mb-md-0" aria-label=".form-select-md example"
-                      name="property-status">
-                      <option selected>Status</option>
-                      <option value="Any">Any</option>
-                      <option value="For Rent">For Rent</option>
-                      <option value="For Sale">For Sale</option>
-                    </select>
+
+                  <div class="col-lg-3 col-md-2 py-1 searchItem">
+                    <div class="border-end  p-1 searchItemBox">
+                      <label for="checkIn"><span class="fw-bold text-dark fs-6 text ms-2">Check in</span></label>
+                      <input type="date" class="form-control form-control-sm border-0 text-secondary" id="checkIn"
+                        placeholder="Add dates">
+                    </div>
                   </div>
-                  <div class="col-lg-2 col-md-3">
-                    <select class="form-select font-14 form-select-md mb-3 mb-md-0" aria-label=".form-select-md example"
-                      name="property-status">
-                      <option selected>Filter</option>
-                      <option value="HTL">High to Low</option>
-                      <option value="LTH">Low to High</option>
-                      <option value="New">Newest First</option>
-                      <option value="Old">Oldest First</option>
-                    </select>
+
+                  <div class="col-lg-3 col-md-2 py-1 searchItem">
+                    <div class="border-end  p-1 searchItemBox">
+                      <label for="checkOut"><span class="fw-bold text-dark fs-6 text ms-2">Check out</span></label>
+                      <input type="date" class="form-control form-control-sm border-0 text-secondary" id="checkOut"
+                        placeholder="Add dates">
+                    </div>
                   </div>
+
+                  <div class="col-lg-3 col-md-4 py-1 d-flex justify-content-between align-items-center px-0 searchItem">
+                    <div class=" p-1">
+                      <label for="who"><span class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
+                      <input type="text" class="form-control form-control-sm border-0 text-secondary" id="who"
+                        placeholder="Add guests">
+                    </div>
+                    <button class="btn btn-primary rounded p-4" type="button">
+                      <i class="fas fa-search font-29"></i>
+                    </button>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
+
+
+          <!-- Slider main container -->
 
           <div class="property-listing-meta">
             <div class="home-featured-property">
@@ -144,7 +146,7 @@
                         </div>
                       </div>
                       <div class="property-details mb-1">
-                        <h4 class="text-white mb-0">$13,000/<span>mo</span></h4>
+                        <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span></h4>
                         <div class="property-view ms-auto">
                           <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -178,7 +180,7 @@
                       <img src="assets/images/property-img/fe-property-img-2.jpg" alt="featured-property"
                         class="img-fluid w-100 fe-pro-img rounded-top" />
                       <div class="property-details mb-1">
-                        <h4 class="text-white mb-0">$13,000/<span>mo</span></h4>
+                        <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span></h4>
                         <div class="property-view ms-auto">
 
                           <a href="#"><i class="far fa-heart"></i></a>
@@ -211,7 +213,7 @@
                       <img src="assets/images/property-img/fe-property-img-3.jpg" alt="featured-property"
                         class="img-fluid w-100 fe-pro-img rounded-top" />
                       <div class="property-details mb-1">
-                        <h4 class="text-white mb-0">$13,000/<span>mo</span></h4>
+                        <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span></h4>
                         <div class="property-view ms-auto">
                           <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -243,7 +245,7 @@
                       <img src="assets/images/property-img/fe-property-img-4.jpg" alt="featured-property"
                         class="img-fluid w-100 fe-pro-img rounded-top" />
                       <div class="property-details mb-1">
-                        <h4 class="text-white mb-0">$13,000/<span>mo</span></h4>
+                        <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span></h4>
                         <div class="property-view ms-auto">
                           <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -275,7 +277,7 @@
                       <img src="assets/images/property-img/fe-property-img-5.jpg" alt="featured-property"
                         class="img-fluid w-100 fe-pro-img rounded-top" />
                       <div class="property-details mb-1">
-                        <h4 class="text-white mb-0">$13,000/<span>mo</span></h4>
+                        <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span></h4>
                         <div class="property-view ms-auto">
                           <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -317,7 +319,7 @@
                         </div>
                       </div>
                       <div class="property-details mb-1">
-                        <h4 class="text-white mb-0">$13,000/<span>mo</span></h4>
+                        <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span></h4>
                         <div class="property-view ms-auto">
                           <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -615,6 +617,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/libs/fontawesome/js/all.js"></script>
   <script src="assets/js/isotope.pkgd.min.js"></script>
   <script src="assets/js/custom.js"></script>
@@ -627,6 +630,29 @@
         // dots: true
       });
     })
+  </script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
   </script>
 </body>
 

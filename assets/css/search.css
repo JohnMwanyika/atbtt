@@ -1,0 +1,8 @@
+.searchItem:hover,
+form-control:hover {
+  background: #f8f9fa;
+}
+.searchItemBox:hover {
+  border: none;
+  outline: none;
+}

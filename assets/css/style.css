@@ -1392,6 +1392,9 @@ p {
   .property-amenities ul {
     column-count: 1;
   }
+  .searchBox {
+    width: 90.5%;
+  }
 }
 
 @media (max-width: 425px) {
