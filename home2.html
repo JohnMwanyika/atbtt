@@ -49,7 +49,7 @@
             </a>
 
             <div class="collapse navbar-collapse justify-content-center" id=" collapsible-menu">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav primary-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="contact-us.html">AirBnB</a>
                 </li>
@@ -62,14 +62,25 @@
               </ul>
             </div>
 
-            <div
-              class="user d-flex align-items-center justify-content-between bg-white rounded-pill border p-2 shadow-sm">
-              <!-- <a href="page-login.html" class="btn btn-primary py-2 px-4 d-lg-none d-none">LOGIN</a> -->
-              <i class="fas fa-bars font-28 px-3"></i>
-              <a href="#" class="text-dark d-lg-block d-none">
-                <i class="fas fa-user-circle font-30 mt-1"></i>
-              </a>
+            <div class="dropdown dropdown-center me-5">
+              <div role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                class="user d-lg-block d-none d-flex align-items-center justify-content-between bg-white rounded-pill border py-1 px-2 shadow-sm">
+                <i class="fas fa-bars font-29 px-2 mb-1"></i>
+                <a href="#" class="">
+                  <i class="fas fa-user-circle font-30"></i>
+                </a>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
             </div>
+
 
           </nav>
         </div>
@@ -109,7 +120,7 @@
                   </div>
 
                   <div class="col-lg-3 col-md-4 py-1 d-flex justify-content-between align-items-center px-0 searchItem">
-                    <div class=" p-1">
+                    <div class="p-1">
                       <label for="who"><span class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
                       <input type="text" class="form-control form-control-sm border-0 text-secondary" id="who"
                         placeholder="Add guests">
@@ -629,7 +640,29 @@
         nextArrow: `<button class="slick-next"></button>`
         // dots: true
       });
-    })
+
+
+      // const searchItems = $('.searchItemBox');
+      // searchItems.each(e => {
+      //   console.log(e)
+      //   e.addEventListener('mouseover', function () {
+      //     $(this).removeClass("border-end");
+      //   });
+      // })
+      const searchItems = $('.searchItemBox');
+      searchItems.each(function (index, element) {
+        console.log(element);
+        element.addEventListener('mouseover', function () {
+          $(this).removeClass("border-end");
+
+          $(this).on("mouseleave", function () {
+            $(this).addClass("border-end");
+          });
+        });
+      });
+
+    }
+    )
   </script>
   <script>
     const swiper = new Swiper('.swiper', {
