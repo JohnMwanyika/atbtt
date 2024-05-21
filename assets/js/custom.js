@@ -199,11 +199,11 @@ $(function () {
     });
 
     // ICON SLIDER
-    $('.iconSlider').owlCarousel({
-        items: 5,
-        loop: true,
-        margin: 10,
-        nav: true,
+    $('.iconSlider').slick({
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        // variableWidth: true
     });
 
     $('.imageSlider').slick({
