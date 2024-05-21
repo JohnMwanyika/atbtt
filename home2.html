@@ -25,7 +25,7 @@
 <body>
   <div class="main-wrapper">
     <!-- navbar -->
-    <header class="topbar border-bottom shadow-sm">
+    <header class="topbar border-bottom bg-white">
       <div class="container-fluid px-4">
         <div class="header">
           <nav class="navbar navbar-expand-lg navbar-dark top-navbar">
@@ -81,54 +81,72 @@
               </ul>
             </div>
 
-
           </nav>
         </div>
       </div>
     </header>
 
     <div class="property-grid-listing">
-      <div class="property-listing-section pb-5" style="padding-top: 120px;">
-        <div class="container-fluid px-4">
-          <div class="grid-search-result d-flex justify-content-center">
-            <div class="card border-0 rounded shadow w-80 border border-secondary searchBox">
-              <div class="card-body py-0">
-                <div class="row align-items-center">
+      <div class="property-listing-section" style="padding-top: 120px;">
+        <div class="container-fluid">
+          <div class="grid-search-result w-75 mx-auto">
+            <div class="card border-0 rounded shadow border border-secondary searchBox">
+              <div class="card-body py-lg-0 px-1">
+                <div class="row align-items-center m-0">
 
-                  <div class="col-lg-3 col-md-4 py-1 searchItem">
-                    <div class="border-end  p-1 searchItemBox">
+                  <div class="col-lg-3 col-md-4 py-1 px-0 searchItem">
+                    <div class="px-1 border-end searchItemBox">
                       <label for="destination"><span class="fw-bold text-dark fs-6 text ms-2">Where</span></label>
-                      <input type="text" class="form-control form-control-sm border-0 text-secondary" id="destination"
-                        placeholder="Search destination">
+                      <input type="text" class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                        id="destination" placeholder="Search destination">
                     </div>
                   </div>
 
-                  <div class="col-lg-3 col-md-2 py-1 searchItem">
-                    <div class="border-end  p-1 searchItemBox">
+                  <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
+                    <div class="border-end px-1 searchItemBox">
                       <label for="checkIn"><span class="fw-bold text-dark fs-6 text ms-2">Check in</span></label>
-                      <input type="date" class="form-control form-control-sm border-0 text-secondary" id="checkIn"
-                        placeholder="Add dates">
+                      <input type="date" class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                        id="checkIn" placeholder="Add dates">
                     </div>
                   </div>
 
-                  <div class="col-lg-3 col-md-2 py-1 searchItem">
-                    <div class="border-end  p-1 searchItemBox">
+                  <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
+                    <div class="border-end px-1 searchItemBox">
                       <label for="checkOut"><span class="fw-bold text-dark fs-6 text ms-2">Check out</span></label>
-                      <input type="date" class="form-control form-control-sm border-0 text-secondary" id="checkOut"
-                        placeholder="Add dates">
+                      <input type="date" class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                        id="checkOut" placeholder="Add dates">
                     </div>
                   </div>
 
-                  <div class="col-lg-3 col-md-4 py-1 d-flex justify-content-between align-items-center px-0 searchItem">
-                    <div class="p-1">
+                  <div class="col-lg-3 col-md-4 py-1 px-0">
+                    <div class="row m-0 align-items-center px-1">
+                      <div class="col-lg-7 searchItemBox">
+                        <div class="row mb-lg-0 mb-3">
+                          <label for="who"><span class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
+                          <input type="text" class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                            id="who" placeholder="Add guests">
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="row">
+                          <button class="btn btn-primary rounded py-lg-3" type="button">
+                            <i class="fas fa-search font-29"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div
+                    class="col-lg-3 col-md-4 py-1 px-0 d-flex justify-content-between align-items-center px-0 searchItem">
+                    <div class="px-0 flex-1">
                       <label for="who"><span class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
-                      <input type="text" class="form-control form-control-sm border-0 text-secondary" id="who"
-                        placeholder="Add guests">
+                      <input type="text" class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                        id="who" placeholder="Add guests">
                     </div>
                     <button class="btn btn-primary rounded p-4" type="button">
                       <i class="fas fa-search font-29"></i>
                     </button>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -641,25 +659,17 @@
         // dots: true
       });
 
-
       // const searchItems = $('.searchItemBox');
-      // searchItems.each(e => {
-      //   console.log(e)
-      //   e.addEventListener('mouseover', function () {
+      // searchItems.each(function (index, element) {
+      //   console.log(element);
+      //   element.addEventListener('mouseover', function () {
       //     $(this).removeClass("border-end");
-      //   });
-      // })
-      const searchItems = $('.searchItemBox');
-      searchItems.each(function (index, element) {
-        console.log(element);
-        element.addEventListener('mouseover', function () {
-          $(this).removeClass("border-end");
 
-          $(this).on("mouseleave", function () {
-            $(this).addClass("border-end");
-          });
-        });
-      });
+      //     $(this).on("mouseleave", function () {
+      //       $(this).addClass("border-end");
+      //     });
+      //   });
+      // });
 
     }
     )
