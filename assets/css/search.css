@@ -1,5 +1,4 @@
-/* .searchItem:hover, */
-form-control:hover,
+/* form-control:hover,
 .searchItemBox:hover {
   background: #f8f9fa;
   border: none !important;
@@ -8,7 +7,6 @@ form-control:hover,
 @media (max-width: 767.98px) {
   .searchItem > .searchItemBox {
     border-right: none !important;
-    /* border-bottom: 2px solid #f8f9fa; */
   }
   .form-control-sm {
     background-color: #f8f9fa !important;
@@ -17,10 +15,9 @@ form-control:hover,
     min-width: 100%;
     margin: auto !important;
   }
-  /* .searchItem:hover, */
   form-control:hover,
   .searchItemBox:hover {
     background: transparent;
     border-right: none !important;
   }
-}
+} */
