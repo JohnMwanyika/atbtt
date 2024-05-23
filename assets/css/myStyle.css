@@ -14,8 +14,15 @@ form-control:hover,
   cursor: pointer;
 }
 
-.categoryIcon {
+.categoryIcon:hover {
   /* background-color: rgb(201, 239, 227); */
+  color: royalblue;
+  border-bottom: 2px solid royalblue;
+  transition: transform 0.3s ease-out;
+}
+.categoryActive {
+  color: royalblue;
+  border-bottom: 2px solid royalblue;
 }
 
 @media (max-width: 767.98px) {
