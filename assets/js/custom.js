@@ -58,148 +58,149 @@ $(function () {
     //Featured Property Carousel
     //
 
-    $('.featured-property-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        dots: true,
-        autoplay: true,
-        center: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
+    // $('.featured-property-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 30,
+    //     nav: false,
+    //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //     dots: true,
+    //     autoplay: true,
+    //     center: true,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         600: {
+    //             items: 2
+    //         },
+    //         1000: {
+    //             items: 3
+    //         }
+    //     }
+    // });
 
-    $('.testimonial-carousal').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        dots: true,
-        autoplay: false,
-        center: true,
-        responsiveClass: true,
-        autoHeight: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-                center: false
-            },
-            1024: {
-                items: 1,
-            }
-        }
-    });
+    // $('.testimonial-carousal').owlCarousel({
+    //     loop: true,
+    //     margin: 30,
+    //     nav: false,
+    //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //     dots: true,
+    //     autoplay: false,
+    //     center: true,
+    //     responsiveClass: true,
+    //     autoHeight: false,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 1,
+    //             center: false
+    //         },
+    //         1024: {
+    //             items: 1,
+    //         }
+    //     }
+    // });
 
-    $('.testimonial-carousal-st2').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        dots: false,
-        autoplay: true,
-        // center: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-                center: false
-            },
-            1024: {
-                items: 3,
-            }
-        }
-    });
+    // $('.testimonial-carousal-st2').owlCarousel({
+    //     loop: true,
+    //     margin: 30,
+    //     nav: false,
+    //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //     dots: false,
+    //     autoplay: true,
+    //     // center: true,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 2,
+    //             center: false
+    //         },
+    //         1024: {
+    //             items: 3,
+    //         }
+    //     }
+    // });
 
-    $('.v1-banner-carousel').owlCarousel({
-        animateOut: 'fadeOut',
-        loop: true,
-        margin: 30,
-        nav: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        dots: false,
-        autoplay: true,
-        center: true,
-        smartSpeed: 450,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-                center: false
-            },
-            1024: {
-                items: 1,
-            }
-        }
+    // $('.v1-banner-carousel').owlCarousel({
+    //     animateOut: 'fadeOut',
+    //     loop: true,
+    //     margin: 30,
+    //     nav: false,
+    //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //     dots: false,
+    //     autoplay: true,
+    //     center: true,
+    //     smartSpeed: 450,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 1,
+    //             center: false
+    //         },
+    //         1024: {
+    //             items: 1,
+    //         }
+    //     }
 
-    });
+    // });
 
-    $('.v2-banner-carousel').owlCarousel({
-        animateOut: 'fadeOut',
-        loop: true,
-        margin: 30,
-        nav: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        dots: false,
-        autoplay: true,
-        center: true,
-        smartSpeed: 450,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-                center: false
-            },
-            1024: {
-                items: 1,
-            }
-        }
+    // $('.v2-banner-carousel').owlCarousel({
+    //     animateOut: 'fadeOut',
+    //     loop: true,
+    //     margin: 30,
+    //     nav: false,
+    //     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    //     dots: false,
+    //     autoplay: true,
+    //     center: true,
+    //     smartSpeed: 450,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 1,
+    //             center: false
+    //         },
+    //         1024: {
+    //             items: 1,
+    //         }
+    //     }
 
-    });
+    // });
 
-    $('.property-img-carousal').owlCarousel({
-        loop: true,
-        margin: 3,
-        dots: false,
-        nav: true,
-        navText: [$(".property-prev"), $(".property-next")],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
+    // $('.property-img-carousal').owlCarousel({
+    //     loop: true,
+    //     margin: 3,
+    //     dots: false,
+    //     nav: true,
+    //     navText: [$(".property-prev"), $(".property-next")],
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         600: {
+    //             items: 1
+    //         },
+    //         1000: {
+    //             items: 3
+    //         }
+    //     }
+    // });
 
     // ICON SLIDER
-    $('.iconSlider').slick({
+    $('.categorySlider').slick({
+        autoplay: true,
         infinite: true,
         slidesToShow: 8,
         slidesToScroll: 1,
@@ -209,33 +210,48 @@ $(function () {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 5,
                     slidesToScroll: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
-                    accessibility: false
-
+                }
+            },
+            {
+                breakpoint: 340,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 230,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
+
 
     $('.imageSlider').slick({
         arrows: true,

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAT</title>
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.css" />
+    <!-- FlatIcons -->
+    <link href="assets/css/css/uicons-thin-straight.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/myStyle.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/search.css" />
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- navbar -->
+        <header class="topbar border-bottom bg-white">
+            <div class="container-fluid px-4">
+                <div class="header">
+                    <nav class="navbar navbar-expand-lg navbar-dark top-navbar">
+
+                        <a class="navbar-brand" href="https://code-wrapper.com/royal-homes">
+                            <!-- <img src="assets/images/logo1.png" class="logo logo-white" alt="logo"> -->
+                            <img src="assets/images/logo-dark.png" class="logo logo-dark" alt="logo">
+                            <img src="assets/images/logo-dark.png" class="logo logo-white" alt="logo">
+                        </a>
+
+                        <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsible-menu" aria-controls="collapsible-menu" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="hamburger">
+                                <span class="hamburger-top"></span>
+                                <span class="hamburger-bottom"></span>
+                            </span>
+                        </button>
+                        <a href="#" class="text-white d-lg-none d-block">
+                            <i class="fas fa-user-circle font-22 mt-1"></i>
+                        </a>
+
+                        <div class="collapse navbar-collapse justify-content-center" id=" collapsible-menu">
+                            <ul class="navbar-nav primary-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">AirBnB</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Bookings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Travels and Tours</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown dropdown-center me-5">
+                            <div role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                class="user d-lg-block d-none d-flex align-items-center justify-content-between bg-white rounded-pill border py-1 px-2 shadow-sm">
+                                <i class="fas fa-bars font-29 px-2 mb-1"></i>
+                                <a href="#" class="">
+                                    <i class="fas fa-user-circle font-30"></i>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="property-grid-listing">
+            <div class="property-listing-section" style="padding-top: 100px;">
+                <div class="container-fluid">
+
+                    <!-- SEARCH BAR -->
+                    <div class="grid-search-result w-75 mx-auto rounded shadow-sm border border-light">
+                        <div class="card border-0 searchBox">
+                            <div class="card-body py-lg-0 px-1">
+                                <div class="row align-items-center m-0">
+
+                                    <div class="col-lg-3 col-md-4 py-1 px-0 searchItem">
+                                        <div class="px-1 border-end searchItemBox">
+                                            <label for="destination"><span
+                                                    class="fw-bold text-dark fs-6 text ms-2">Where</span></label>
+                                            <input type="text"
+                                                class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                id="destination" placeholder="Search destination">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
+                                        <div class="border-end px-1 searchItemBox">
+                                            <label for="checkIn"><span class="fw-bold text-dark fs-6 text ms-2">Check
+                                                    in</span></label>
+                                            <input type="date"
+                                                class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                id="checkIn" placeholder="Add dates">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
+                                        <div class="border-end px-1 searchItemBox">
+                                            <label for="checkOut"><span class="fw-bold text-dark fs-6 text ms-2">Check
+                                                    out</span></label>
+                                            <input type="date"
+                                                class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                id="checkOut" placeholder="Add dates">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 py-1 px-0">
+                                        <div class="row m-0 align-items-center px-1">
+                                            <div class="col-lg-8 searchItemBox">
+                                                <div class="row mb-lg-0 mb-3">
+                                                    <label for="who"><span
+                                                            class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
+                                                    <input type="text"
+                                                        class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                        id="who" placeholder="Add guests">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="row">
+                                                    <button class="btn btn-primary rounded py-lg-3" type="button">
+                                                        <i class="fas fa-search font-29"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CATEGORY SLIDER -->
+                    <div class="filterSlider my-4">
+
+                        <div class="container-fluid bg-white border-bottom border-top py-3 d-flex flex-wrap">
+
+                            <div class="container d-flex justify-content-center flex-grow-1">
+                                <!-- prev button -->
+                                <div
+                                    class="categorySliderBtn rounded categoryPrev bg-secondary text-white px-2 align-self-center">
+                                    &lt;
+                                </div>
+
+                                <div class="categorySlider owl-carousel owl-theme">
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-mug-tea fs-5"></i>
+                                            <small>Breakfirst</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-house-tree fs-5"></i>
+                                            <small>Tiny house</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-water-ladder fs-5"></i>
+                                            <small>Amazing Pools</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-umbrella-beach fs-5"></i>
+                                            <small>Beach Front</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-castle"></i>
+                                            <small>Castles</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-fire-flame-curved fs-5"></i>
+                                            <small>Trending</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-island-tropical fs-5"></i>
+                                            <small>Island</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-container-storage fs-5"></i>
+                                            <small>Containers</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-rent fs-5"></i>
+                                            <small>New</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-sailboat fs-5"></i>
+                                            <small>Boats</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-tents fs-5"></i>
+                                            <small>Camping</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-mountain fs-5"></i>
+                                            <small>Countryside</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Next button -->
+                                <div
+                                    class="categorySliderBtn rounded categoryNext bg-secondary text-white px-2 align-self-center">
+                                    &gt;
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type=" button" class="btn btn-outline-primary btn-sm"><i
+                                        class="fas fa-sliders font-24"></i>
+                                    Filter
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="filterSlider my-4">
+            <div class="container-fluid bg-white py-3">
+              <div class="row">
+                <div class="col-lg-10">
+
+                  
+
+                </div>
+                <div class="col-lg-2 bg-light">
+                  <div class="">
+                    <button type="button" class="btn btn-outline-primary btn-sm"><i class="fas fa-sliders font-24"></i>
+                      Filter
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div> -->
+
+
+                    <!-- Slider main container -->
+
+                    <div class="property-listing-meta">
+                        <div class="home-featured-property">
+
+                            <div class="row mt-5">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card v1-featured-property-card mb-4 border-0">
+
+                                        <div class="featured-product-img position-relative">
+                                            <div class="imageSlider">
+                                                <div class="_img">
+                                                    <img src="assets/images/property-img/fe-property-img-1.jpg"
+                                                        alt="featured-property"
+                                                        class="img-fluid w-100 fe-pro-img rounded-top" />
+                                                </div>
+                                                <div class="_img">
+                                                    <img src="assets/images/property-img/fe-property-img-2.jpg"
+                                                        alt="featured-property"
+                                                        class="img-fluid w-100 fe-pro-img rounded-top" />
+                                                </div>
+                                            </div>
+                                            <div class="property-details mb-1">
+                                                <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span>
+                                                </h4>
+                                                <div class="property-view ms-auto">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-orange mb-0">Apartment</p>
+                                            <h4 class="font-20 product-title"><a href="page-property-single-v1.html"
+                                                    class="text-decoration-none">Modern Apartments</a></h4>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                                Angeles, CA 90015</p>
+                                        </div>
+
+                                        <div class="property-footer border-top">
+                                            <div class="card-body">
+                                                <div class="property-footer-meta d-flex align-items-center">
+                                                    <a href="#"><img src="assets/images/user-icon.png" alt="user-image"
+                                                            class="img-fluid"></a>
+                                                    <div class="ms-3">
+                                                        <h6 class="mb-0"><a href="#"
+                                                                class="text-decoration-none">Johnathan Doe</a></h6>
+                                                        <p class="font-14 mb-0">Estate Agents</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card v1-featured-property-card mb-4 border-0">
+                                        <div class="featured-product-img position-relative">
+                                            <img src="assets/images/property-img/fe-property-img-2.jpg"
+                                                alt="featured-property"
+                                                class="img-fluid w-100 fe-pro-img rounded-top" />
+                                            <div class="property-details mb-1">
+                                                <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span>
+                                                </h4>
+                                                <div class="property-view ms-auto">
+
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-orange mb-0">House</p>
+                                            <h4 class="font-20 product-title"><a href="page-property-single-v2.html"
+                                                    class="text-decoration-none">Luxury Family Home</a></h4>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                                Angeles, CA 90015</p>
+                                        </div>
+                                        <div class="property-footer border-top">
+                                            <div class="card-body">
+                                                <div class="property-footer-meta d-flex align-items-center">
+                                                    <a href="#"><img src="assets/images/user-icon.png" alt="user-image"
+                                                            class="img-fluid"></a>
+                                                    <div class="ms-3">
+                                                        <h6 class="mb-0"><a href="#"
+                                                                class="text-decoration-none">Johnathan Doe</a></h6>
+                                                        <p class="font-14 mb-0">Estate Agents</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card v1-featured-property-card mb-4 border-0">
+                                        <div class="featured-product-img position-relative">
+                                            <img src="assets/images/property-img/fe-property-img-3.jpg"
+                                                alt="featured-property"
+                                                class="img-fluid w-100 fe-pro-img rounded-top" />
+                                            <div class="property-details mb-1">
+                                                <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span>
+                                                </h4>
+                                                <div class="property-view ms-auto">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-orange mb-0">Apartment</p>
+                                            <h4 class="font-20 product-title"><a href="page-property-single-v1.html"
+                                                    class="text-decoration-none">Renovated Apartment</a></h4>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                                Angeles, CA 90015</p>
+                                        </div>
+                                        <div class="property-footer border-top">
+                                            <div class="card-body">
+                                                <div class="property-footer-meta d-flex align-items-center">
+                                                    <a href="#"><img src="assets/images/user-icon.png" alt="user-image"
+                                                            class="img-fluid"></a>
+                                                    <div class="ms-3">
+                                                        <h6 class="mb-0"><a href="#"
+                                                                class="text-decoration-none">Johnathan Doe</a></h6>
+                                                        <p class="font-14 mb-0">Estate Agents</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card v1-featured-property-card mb-4 border-0">
+                                        <div class="featured-product-img position-relative">
+                                            <img src="assets/images/property-img/fe-property-img-4.jpg"
+                                                alt="featured-property"
+                                                class="img-fluid w-100 fe-pro-img rounded-top" />
+                                            <div class="property-details mb-1">
+                                                <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span>
+                                                </h4>
+                                                <div class="property-view ms-auto">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-orange mb-0">Apartment</p>
+                                            <h4 class="font-20 product-title"><a href="page-property-single-v2.html"
+                                                    class="text-decoration-none">Romain Apartments</a></h4>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                                Angeles, CA 90015</p>
+                                        </div>
+                                        <div class="property-footer border-top">
+                                            <div class="card-body">
+                                                <div class="property-footer-meta d-flex align-items-center">
+                                                    <a href="#"><img src="assets/images/user-icon.png" alt="user-image"
+                                                            class="img-fluid"></a>
+                                                    <div class="ms-3">
+                                                        <h6 class="mb-0"><a href="#"
+                                                                class="text-decoration-none">Johnathan Doe</a></h6>
+                                                        <p class="font-14 mb-0">Estate Agents</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card v1-featured-property-card mb-4 border-0">
+                                        <div class="featured-product-img position-relative">
+                                            <img src="assets/images/property-img/fe-property-img-5.jpg"
+                                                alt="featured-property"
+                                                class="img-fluid w-100 fe-pro-img rounded-top" />
+                                            <div class="property-details mb-1">
+                                                <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span>
+                                                </h4>
+                                                <div class="property-view ms-auto">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-orange mb-0">House</p>
+                                            <h4 class="font-20 product-title"><a href="page-property-single-v1.html"
+                                                    class="text-decoration-none">Matrix House</a></h4>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                                Angeles, CA 90015</p>
+                                        </div>
+                                        <div class="property-footer border-top">
+                                            <div class="card-body">
+                                                <div class="property-footer-meta d-flex align-items-center">
+                                                    <a href="#"><img src="assets/images/user-icon.png" alt="user-image"
+                                                            class="img-fluid"></a>
+                                                    <div class="ms-3">
+                                                        <h6 class="mb-0"><a href="#"
+                                                                class="text-decoration-none">Johnathan Doe</a></h6>
+                                                        <p class="font-14 mb-0">Estate Agents</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card v1-featured-property-card mb-4 border-0">
+                                        <div class="featured-product-img position-relative">
+                                            <!-- <button class="_slick-prev">&lt;</button>
+                      <button class="_slick-next">&gt;</button> -->
+                                            <div class="imageSlider">
+                                                <div class="_img">
+                                                    <img src="assets/images/property-img/fe-property-img-6.jpg"
+                                                        alt="featured-property"
+                                                        class="img-fluid w-100 fe-pro-img rounded-top" />
+                                                </div>
+                                                <div class="_img">
+                                                    <img src="assets/images/property-img/fe-property-img-6.jpg"
+                                                        alt="featured-property"
+                                                        class="img-fluid w-100 fe-pro-img rounded-top" />
+                                                </div>
+                                            </div>
+                                            <div class="property-details mb-1">
+                                                <h4 class="text-white mb-0 text-truncate">Ksh 13,000/<span>night</span>
+                                                </h4>
+                                                <div class="property-view ms-auto">
+                                                    <a href="#"><i class="far fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-orange mb-0">Villa</p>
+                                            <h4 class="font-20 product-title text-truncate">
+                                                <a href="#" class="text-decoration-none">
+                                                    Real Luxury Family House Villa hii
+                                                </a>
+                                            </h4>
+                                            <p class="mb-0">
+                                                <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA
+                                                90015
+                                            </p>
+                                        </div>
+
+                                        <div class="property-footer border-top">
+                                            <div class="card-body">
+                                                <div class="property-footer-meta d-flex align-items-center">
+                                                    <a href="#"><img src="assets/images/user-icon.png" alt="user-image"
+                                                            class="img-fluid"></a>
+                                                    <div class="ms-3">
+                                                        <h6 class="mb-0"><a href="#"
+                                                                class="text-decoration-none">Johnathan Doe</a></h6>
+                                                        <p class="font-14 mb-0">Estate Agents</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="blog-post-pagination mt-4">
+                            <ul class="page-navigation list-inline text-center">
+                                <li class="page-item list-inline-item">
+                                    <a class="page-link" href="#" tabindex="-1"><i class="fas fa-arrow-left"></i></a>
+                                </li>
+                                <li class="page-item list-inline-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item list-inline-item active" aria-current="page">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item list-inline-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item list-inline-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item list-inline-item"><a class="page-link" href="#">29</a></li>
+                                <li class="page-item list-inline-item">
+                                    <a class="page-link" href="#"><i class="fas fa-arrow-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div class="modal fade fade-scale" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">More Options</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="search-property-modal">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <input type="text" class="form-control font-14 mb-3" name="mo-keyword"
+                                        placeholder="Enter Keywords..." value="">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select font-14 form-select-md mb-3"
+                                        aria-label=".form-select-md example" name="mo-property-type">
+                                        <option selected="">Property Type</option>
+                                        <option value="Residential">Residential</option>
+                                        <option value="Commercial">Commercial</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select font-14 form-select-md mb-3"
+                                        aria-label=".form-select-md example" name="mo-property-location">
+                                        <option selected="">Location</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select form-select-md mb-3 font-14"
+                                        aria-label=".form-select-md example" name="mo-property-status">
+                                        <option selected="">Status</option>
+                                        <option value="Any">Any</option>
+                                        <option value="For Rent">For Rent</option>
+                                        <option value="For Sale">For Sale</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select form-select-md mb-3 font-14"
+                                        aria-label=".form-select-md example" name="mo-property-rooms">
+                                        <option selected="">Max Rooms</option>
+                                        <option value="1">1 Rooms</option>
+                                        <option value="2">2 Rooms</option>
+                                        <option value="3">3 Rooms</option>
+                                        <option value="4">4 Rooms</option>
+                                        <option value="5">5 Rooms</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select form-select-md mb-3 font-14"
+                                        aria-label=".form-select-md example" name="mo-property-bed">
+                                        <option selected="">Bedrooms</option>
+                                        <option value="1">1 Bedrooms</option>
+                                        <option value="2">2 Bedrooms</option>
+                                        <option value="3">3 Bedrooms</option>
+                                        <option value="4">4 Bedrooms</option>
+                                        <option value="5">5 Bedrooms</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select form-select-md mb-3 font-14"
+                                        aria-label=".form-select-md example" name="mo-property-bath">
+                                        <option selected="">Bathrooms</option>
+                                        <option value="1">1 Bathrooms</option>
+                                        <option value="2">2 Bathrooms</option>
+                                        <option value="3">3 Bathrooms</option>
+                                        <option value="4">4 Bathrooms</option>
+                                        <option value="5">5 Bathrooms</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select form-select-md mb-3 font-14"
+                                        aria-label=".form-select-md example" name="mo-property-year">
+                                        <option selected="">Year Built</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select form-select-md mb-3 font-14"
+                                        aria-label=".form-select-md example" name="mo-property-agent">
+                                        <option selected="">Agents</option>
+                                        <option value="Agent 1">Agent 1</option>
+                                        <option value="Agent 2">Agent 2</option>
+                                        <option value="Agent 3">Agent 3</option>
+                                        <option value="Agent 4">Agent 4</option>
+                                        <option value="Agent 5">Agent 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <input type="text" name="mo-min-price" class="form-control font-14 mb-3"
+                                        placeholder="Min Price">
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <input type="text" name="mo-max-price" class="form-control font-14 mb-3"
+                                        placeholder="Max Price">
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <input type="text" name="mo-min-area" class="form-control font-14 mb-3"
+                                        placeholder="Min Area">
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <input type="text" name="mo-max-area" class="form-control font-14 mb-3"
+                                        placeholder="Max Area">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Dining-Room" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Dining Room">
+                                        <label for="Dining-Room" class="ms-2 form-check-label font-14">Dining
+                                            Room</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Family-Room" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Family Room">
+                                        <label for="Family-Room" class="ms-2 form-check-label font-14">Family
+                                            Room</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Air-Condition" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Air Condition">
+                                        <label for="Air-Condition" class="ms-2 form-check-label font-14">Air
+                                            Condition</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Cooling-System" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Cooling System">
+                                        <label for="Cooling-System" class="ms-2 form-check-label font-14">Cooling
+                                            System</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Heating-System" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Heating System">
+                                        <label for="Heating-System" class="ms-2 form-check-label font-14">Heating
+                                            System</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Central-Cooling" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Central Cooling">
+                                        <label for="Central-Cooling" class="ms-2 form-check-label font-14">Central
+                                            Cooling</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Central-Heating" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Central Heating">
+                                        <label for="Central-Heating" class="ms-2 form-check-label font-14">Central
+                                            Heating</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Dishwasher" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Dishwasher">
+                                        <label for="Dishwasher" class="ms-2 form-check-label font-14">Dishwasher</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Fireplace" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Fireplace">
+                                        <label for="Fireplace" class="ms-2 form-check-label font-14">Fireplace</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Fire-Alarm" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Fire Alarm">
+                                        <label for="Fire-Alarm" class="ms-2 form-check-label font-14">Fire Alarm</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Emergency-Exit" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Emergency Exit">
+                                        <label for="Emergency-Exit" class="ms-2 form-check-label font-14">Emergency
+                                            Exit</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Elevator" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Elevator">
+                                        <label for="Elevator" class="ms-2 form-check-label font-14">Elevator</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2 pb-lg-0">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Garden" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Garden">
+                                        <label for="Garden" class="ms-2 form-check-label font-14">Garden</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2 pb-lg-0">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Parking" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Parking">
+                                        <label for="Parking" class="ms-2 form-check-label font-14">Parking</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2 pb-lg-0">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Balcony" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Balcony">
+                                        <label for="Balcony" class="ms-2 form-check-label font-14">Balcony</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12 col-sm-4 col-md-6 pb-2 pb-lg-0">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input id="Home-Theater" class="form-check-input font-14" type="checkbox"
+                                            name="amenities[]" value="Home Theater">
+                                        <label for="Home-Theater" class="ms-2 form-check-label font-14">Home
+                                            Theater</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end mt-4 border-top pt-3">
+                                <button type="button" class="btn btn-warning px-4 py-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Required JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="assets/libs/fontawesome/js/all.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -10,9 +10,13 @@ form-control:hover,
   border: none !important;
 }
 
-/* .categorySliderBtn{
-  
-} */
+.categorySliderBtn {
+  cursor: pointer;
+}
+
+.categoryIcon {
+  /* background-color: rgb(201, 239, 227); */
+}
 
 @media (max-width: 767.98px) {
   .searchItem > .searchItemBox {
