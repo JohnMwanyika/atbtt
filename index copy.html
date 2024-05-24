@@ -99,174 +99,176 @@
             </div>
         </header>
 
-        <!-- SEARCH BAR -->
-        <div class="container-fluid" style="padding-top: 120px;">
-            <div class="w-75 mx-auto rounded shadow-sm border">
-                <div class="card border-0 searchBox">
-                    <div class="card-body py-lg-0 px-1">
-                        <div class="row align-items-center m-0">
 
-                            <div class="col-lg-3 col-md-4 py-1 px-0 searchItem">
-                                <div class="px-1 border-end searchItemBox">
-                                    <label for="destination"><span
-                                            class="fw-bold text-dark fs-6 text ms-2">Where</span></label>
-                                    <input type="text"
-                                        class="form-control form-control-sm border-0 text-secondary bg-transparent"
-                                        id="destination" placeholder="Search destination">
-                                </div>
-                            </div>
+        <div class="property-grid-listing">
+            <div class="property-listing-section" style="padding-top: 125px;">
+                <div class="container-fluid">
 
-                            <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
-                                <div class="border-end px-1 searchItemBox">
-                                    <label for="checkIn"><span class="fw-bold text-dark fs-6 text ms-2">Check
-                                            in</span></label>
-                                    <input type="date"
-                                        class="form-control form-control-sm border-0 text-secondary bg-transparent"
-                                        id="checkIn" placeholder="Add dates">
-                                </div>
-                            </div>
+                    <!-- SEARCH BAR -->
+                    <div class="grid-search-result w-75 mx-auto rounded shadow-sm border">
+                        <div class="card border-0 searchBox">
+                            <div class="card-body py-lg-0 px-1">
+                                <div class="row align-items-center m-0">
 
-                            <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
-                                <div class="border-end px-1 searchItemBox">
-                                    <label for="checkOut"><span class="fw-bold text-dark fs-6 text ms-2">Check
-                                            out</span></label>
-                                    <input type="date"
-                                        class="form-control form-control-sm border-0 text-secondary bg-transparent"
-                                        id="checkOut" placeholder="Add dates">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 py-1 px-0">
-                                <div class="row m-0 align-items-center px-1">
-                                    <div class="col-lg-8 searchItemBox">
-                                        <div class="row mb-lg-0 mb-3">
-                                            <label for="who"><span
-                                                    class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
+                                    <div class="col-lg-3 col-md-4 py-1 px-0 searchItem">
+                                        <div class="px-1 border-end searchItemBox">
+                                            <label for="destination"><span
+                                                    class="fw-bold text-dark fs-6 text ms-2">Where</span></label>
                                             <input type="text"
                                                 class="form-control form-control-sm border-0 text-secondary bg-transparent"
-                                                id="who" placeholder="Add guests">
+                                                id="destination" placeholder="Search destination">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="row">
-                                            <button class="btn btn-primary rounded py-lg-3" type="button">
-                                                <i class="fas fa-search font-29"></i>
-                                            </button>
+
+                                    <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
+                                        <div class="border-end px-1 searchItemBox">
+                                            <label for="checkIn"><span class="fw-bold text-dark fs-6 text ms-2">Check
+                                                    in</span></label>
+                                            <input type="date"
+                                                class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                id="checkIn" placeholder="Add dates">
                                         </div>
                                     </div>
+
+                                    <div class="col-lg-3 col-md-2 py-1 px-0 searchItem">
+                                        <div class="border-end px-1 searchItemBox">
+                                            <label for="checkOut"><span class="fw-bold text-dark fs-6 text ms-2">Check
+                                                    out</span></label>
+                                            <input type="date"
+                                                class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                id="checkOut" placeholder="Add dates">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 py-1 px-0">
+                                        <div class="row m-0 align-items-center px-1">
+                                            <div class="col-lg-8 searchItemBox">
+                                                <div class="row mb-lg-0 mb-3">
+                                                    <label for="who"><span
+                                                            class="fw-bold text-dark fs-6 text ms-2">Who</span></label>
+                                                    <input type="text"
+                                                        class="form-control form-control-sm border-0 text-secondary bg-transparent"
+                                                        id="who" placeholder="Add guests">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="row">
+                                                    <button class="btn btn-primary rounded py-lg-3" type="button">
+                                                        <i class="fas fa-search font-29"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CATEGORY SLIDER -->
+                    <div class="filterSlider border-top border-bottom my-5 bg-white ">
+
+                        <div class="py-2 d-flex flex-wrap">
+
+                            <div class="container d-flex justify-content-center flex-grow-1">
+                                <!-- prev button -->
+                                <div
+                                    class="categorySliderBtn rounded categoryPrev bg-secondary text-white px-2 align-self-center">
+                                    &lt;
+                                </div>
+
+                                <div class="categorySlider owl-carousel owl-theme">
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold categoryActive">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-mug-tea fs-5"></i>
+                                            <small>Breakfirst</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-house-tree fs-5"></i>
+                                            <small>Tiny house</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-water-ladder fs-5"></i>
+                                            <small>Amazing Pools</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-umbrella-beach fs-5"></i>
+                                            <small>Beach Front</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-castle"></i>
+                                            <small>Castles</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-fire-flame-curved fs-5"></i>
+                                            <small>Trending</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-island-tropical fs-5"></i>
+                                            <small>Island</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-container-storage fs-5"></i>
+                                            <small>Containers</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-rent fs-5"></i>
+                                            <small>New</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-sailboat fs-5"></i>
+                                            <small>Boats</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-tents fs-5"></i>
+                                            <small>Camping</small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none categoryIcon fw-bold">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <i class="fi fi-ts-mountain fs-5"></i>
+                                            <small>Countryside</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Next button -->
+                                <div
+                                    class="categorySliderBtn rounded categoryNext bg-secondary text-white px-2 align-self-center">
+                                    &gt;
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type=" button" class="btn btn-outline-primary btn-sm"><i
+                                        class="fas fa-sliders font-24"></i>
+                                    Filter
+                                </button>
                             </div>
 
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- CATEGORY SLIDER -->
-        <div class="filterSlider border-top border-bottom my-5 bg-white container-fluid">
-
-            <div class="pt-2 d-flex flex-wrap">
-
-                <div class="container d-flex justify-content-center flex-grow-1">
-                    <!-- prev button -->
-                    <div class="categorySliderBtn rounded categoryPrev bg-secondary text-white px-2 align-self-center">
-                        &lt;
-                    </div>
-
-                    <div class="categorySlider owl-carousel owl-theme">
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold categoryActive">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-mug-tea fs-5"></i>
-                                <small>Breakfirst</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-house-tree fs-5"></i>
-                                <small>Tiny house</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-water-ladder fs-5"></i>
-                                <small>Amazing Pools</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-umbrella-beach fs-5"></i>
-                                <small>Beach Front</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-castle"></i>
-                                <small>Castles</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-fire-flame-curved fs-5"></i>
-                                <small>Trending</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-island-tropical fs-5"></i>
-                                <small>Island</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-container-storage fs-5"></i>
-                                <small>Containers</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-rent fs-5"></i>
-                                <small>New</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-sailboat fs-5"></i>
-                                <small>Boats</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-tents fs-5"></i>
-                                <small>Camping</small>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none categoryIcon fw-bold">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fi fi-ts-mountain fs-5"></i>
-                                <small>Countryside</small>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Next button -->
-                    <div class="categorySliderBtn rounded categoryNext bg-secondary text-white px-2 align-self-center">
-                        &gt;
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center align-items-center">
-                    <button type=" button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fas fa-sliders font-24"></i>
-                        Filter
-                    </button>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Property grid -->
-        <div class="property-grid-listing">
-            <div class="property-listing-section">
-                <div class="container-fluid">
+                    <!-- Slider main container -->
 
                     <div class="property-listing-meta">
                         <div class="home-featured-property">
@@ -553,265 +555,14 @@
         <!-- Search Modal -->
         <div class="modal fade fade-scale" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="searchModalLabel">More Options</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="#" method="post">
-                            <div class="container">
-
-                                <div class="container">
-                                    <h5>Type of place</h5>
-                                    <p>Search rooms, entire homes, or any type of place</p>
-                                    <div class="d-flex gap-2 flex-wrap">
-
-                                        <input type="radio" class="btn-check" name="placeType" id="anyType"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark" for="anyType">Any Type</label>
-
-                                        <input type="radio" class="btn-check" name="placeType" id="room"
-                                            autocomplete="off">
-                                        <label class="btn btn-outline-dark" for="room">Room</label>
-
-                                        <input type="radio" class="btn-check" name="placeType" id="entire-home"
-                                            autocomplete="off">
-                                        <label class="btn btn-outline-dark" for="entire-home">Entire home</label>
-
-                                    </div>
-                                </div>
-
-                                <hr>
-
-                                <div class="container">
-                                    <h5>Price Range</h5>
-                                    <p>Nightly prices before fees and taxes</p>
-                                    <label for="customRange1" class="form-label">Example range</label>
-                                    <input type="range" class="form-range" id="customRange1">
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="minPrice"
-                                                    placeholder="minimum price" value="Ksh 0">
-                                                <label for="minPrice">Maximum</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="maxPrice"
-                                                    placeholder="maximum price" value="Ksh 0">
-                                                <label for="maxPrice">Maximum</label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="container">
-                                    <h5>Rooms and Beds</h5>
-                                    <p>Bedrooms</p>
-                                    <div class="d-flex mb-3 flex-wrap gap-2 align-items-center justify-content-even">
-                                        <input type="radio" class="btn-check" name="bedrooms" id="anyRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="anyRoom">Any</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="oneRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="one">1</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="twoRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="two">2</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="threeRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="threeRoom">3</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="fourRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="fourRoom">4</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="fiveRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="fiveRoom">5</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="sixRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="sixRoom">6</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="sevenRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="sevenRoom">7</label>
-
-                                        <input type="radio" class="btn-check" name="bedrooms" id="eightPlusRoom"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="eightPlusRoom">8+</label>
-                                    </div>
-
-                                    <p>Beds</p>
-                                    <div class="d-flex mb-3 flex-wrap gap-2 align-items-center justify-content-even">
-                                        <input type="radio" class="btn-check" name="beds" id="anyBed" autocomplete="off"
-                                            checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="anyBed">Any</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="oneBed" autocomplete="off"
-                                            checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="oneBed">1</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="twoBed" autocomplete="off"
-                                            checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="twoBed">2</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="threeBed"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="threeBed">3</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="fourBed"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="fourBed">4</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="fiveBed"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="fiveBed">5</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="sixBed" autocomplete="off"
-                                            checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="sixBed">6</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="sevenBed"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="sevenBed">7</label>
-
-                                        <input type="radio" class="btn-check" name="beds" id="eightPlusBed"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="eightPlusBed">8+</label>
-                                    </div>
-
-                                    <p>Bathrooms</p>
-                                    <div class="d-flex flex-wrap gap-2 align-items-center justify-content-even">
-                                        <input type="radio" class="btn-check" name="bathrooms" id="anyBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="anyBath">Any</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="oneBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="oneBath">1</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="twoBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="twoBath">2</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="threeBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="threeBath">3</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="fourBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="fourBath">4</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="fiveBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="fiveBath">5</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="sixBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="sixBath">6</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="sevenBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="sevenBath">7</label>
-
-                                        <input type="radio" class="btn-check" name="bathrooms" id="eightPlusBath"
-                                            autocomplete="off" checked>
-                                        <label class="btn btn-outline-dark rounded-pill" for="eightPlusBath">8+</label>
-                                    </div>
-
-                                </div>
-
-                                <hr>
-
-                                <div class="container">
-                                    <h5>Amenities</h5>
-                                    <p>Essentials</p>
-                                    <div class="container d-flex gap-3 flex-wrap">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="wifi">
-                                            <label class="form-check-label" for="wifi">
-                                                Wifi
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="kitchen"
-                                                checked>
-                                            <label class="form-check-label" for="kitchen">
-                                                Kitchen
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="washer"
-                                                checked>
-                                            <label class="form-check-label" for="washer">
-                                                Washer
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="tv" checked>
-                                            <label class="form-check-label" for="tv">
-                                                TV
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="airCondition"
-                                                checked>
-                                            <label class="form-check-label" for="airCondition">
-                                                Air Condition
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <hr>
-
-                                <div class="container">
-                                    <h5 class="mb-3">Booking options</h5>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="instantBook">
-                                                <label class="form-check-label text-dark" for="instantBook">Instant
-                                                    Book</label>
-                                                <p>Listings you can book without waiting for Host approval</p>
-                                            </div>
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="selfCheckin">
-                                                <label class="form-check-label text-dark" for="selfCheckin">Self
-                                                    Check-in</label>
-                                                <p>Easy access to the property once you arrive</p>
-                                            </div>
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="instantBook">
-                                                <label class="form-check-label text-dark" for="instantBook">Free
-                                                    Cancellation</label>
-                                                <p>Only show stays that offer free cancellation</p>
-                                            </div>
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="allowPets">
-                                                <label class="form-check-label text-dark" for="allowPets">Allows
-                                                    Pets</label>
-                                                <p>Listings you can book without waiting for Host approval</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </form>
-                        <!-- <form class="search-property-modal">
+                        <form class="search-property-modal">
                             <div class="row">
                                 <div class="col-lg-4 col-md-12">
                                     <input type="text" class="form-control font-14 mb-3" name="mo-keyword"
@@ -1042,7 +793,7 @@
                             <div class="text-end mt-4 border-top pt-3">
                                 <button type="button" class="btn btn-warning px-4 py-2">Search</button>
                             </div>
-                        </form> -->
+                        </form>
                     </div>
                 </div>
             </div>

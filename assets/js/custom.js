@@ -5,35 +5,44 @@ $(function () {
     // ==============================================================  
     var wind = $(window);
     wind.on("load", function () {
-        var bodyScroll = wind.scrollTop(),
-            navbar = $(".topbar");
+        var bodyScroll = wind.scrollTop(), navbar = $(".topbar"), categorySlider = $(".filterSlider")
         if (bodyScroll > 40) {
             navbar.addClass("fixed-header")
+            if (bodyScroll > 200) {
+                categorySlider.addClass(("fixed-header"))
+            }
         } else {
-            navbar.removeClass("fixed-header")
+            navbar.removeClass("sticky-top")
         }
     });
 
-    $('ul.dropdown-menu [data-bs-toggle="dropdown"]').on('click', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
+    // $('ul.dropdown-menu [data-bs-toggle="dropdown"]').on('click', function (event) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
 
-        $(this).siblings().toggleClass('show');
+    //     $(this).siblings().toggleClass('show');
 
-        if (!$(this).next().hasClass('show')) {
-            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-        }
+    //     if (!$(this).next().hasClass('show')) {
+    //         $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+    //     }
 
-        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-            $('.dropdown-submenu .show').removeClass('show');
-        });
-    });
+    //     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+    //         $('.dropdown-submenu .show').removeClass('show');
+    //     });
+    // });
 
     $(window).scroll(function () {
+        // console.log(wind.scrollTop())
         if ($(window).scrollTop() >= 200) {
             $('.topbar').addClass('fixed-header');
+
+            $('.filterSlider').addClass('stackTop', function () {
+                $('.topbar').removeClass('border-bottom');
+                $(this).removeClass("border-top")
+            });
         } else {
             $('.topbar').removeClass('fixed-header');
+            $('.filterSlider').removeClass('stackTop');
         }
     });
 

@@ -14,6 +14,15 @@ form-control:hover,
   cursor: pointer;
 }
 
+.stackTop {
+  transition: 0.2s ease-in;
+  position: fixed;
+  z-index: 2;
+  top: 30px;
+  background: #fff !important;
+  box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important;
+}
+
 .categoryIcon:hover {
   /* background-color: rgb(201, 239, 227); */
   color: royalblue;

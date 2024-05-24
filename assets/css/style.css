@@ -219,7 +219,7 @@ p {
   position: fixed;
   padding-top: 0;
   background: #fff !important;
-  box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important;
+  /* box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important; */
 }
 .topbar.fixed-header .navbar a svg {
   color: rgb(61 64 91);
