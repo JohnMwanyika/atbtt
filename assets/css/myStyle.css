@@ -42,7 +42,8 @@ form-control:hover,
   .form-control-sm {
     background-color: #f8f9fa !important;
   }
-  .grid-search-result {
+
+  .searchBar {
     min-width: 100%;
     margin: auto !important;
   }
