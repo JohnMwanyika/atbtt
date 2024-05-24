@@ -36,23 +36,31 @@ $(function () {
     //     });
     // });
 
+    let lastScrollTop = 0;
     $(window).scroll(function () {
-        // console.log(wind.scrollTop())
-        if ($(window).scrollTop() >= 200) {
-            $('.topbar').addClass('fixed-header');
+        const scrollTop = $(window).scrollTop();
 
+        if (scrollTop > lastScrollTop) {
             $('.phoneFooter').addClass('stackBottom');
+        } else {
+            $('.phoneFooter').removeClass('stackBottom');
+        }
 
-            $('.filterSlider').addClass('stackTop', function () {
-                $('.topbar').removeClass('border-bottom');
-                $(this).removeClass("border-top")
-            });
+        lastScrollTop = scrollTop;
+
+        if (scrollTop >= 200) {
+            $('.topbar').addClass('fixed-header');
+            $('.filterSlider').addClass('stackTop');
+            $('.topbar').removeClass('border-bottom');
+            $('.filterSlider').removeClass('border-top');
         } else {
             $('.topbar').removeClass('fixed-header');
             $('.filterSlider').removeClass('stackTop');
-            $('.phoneFooter').removeClass('stackBottom');
         }
     });
+
+
+
 
     $('.product-item').isotope({
         itemSelector: '.product-desc',
