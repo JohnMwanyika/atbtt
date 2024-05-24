@@ -9,7 +9,7 @@ $(function () {
         var navbar = $(".topbar");
         var categorySlider = $(".filterSlider");
         // var phoneFooter = $(".phoneFooter");
-
+        console.log(wind)
         if (bodyScroll > 40) {
             navbar.addClass("fixed-header")
             if (bodyScroll > 200) {
@@ -55,7 +55,7 @@ $(function () {
             $('.filterSlider').removeClass('border-top');
         } else {
             $('.topbar').removeClass('fixed-header');
-            $('.filterSlider').removeClass('stackTop');
+            $('.filterSlider.d-lg-block').removeClass('stackTop');
         }
     });
 

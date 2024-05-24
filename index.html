@@ -38,7 +38,7 @@
 <body>
     <div class="main-wrapper">
         <!-- navbar -->
-        <header class="topbar border-bottom bg-white">
+        <header class="topbar border-bottom bg-white d-lg-block d-md-block d-none">
             <div class="container-fluid px-4">
                 <div class="header">
                     <nav class="navbar navbar-expand-lg navbar-dark top-navbar">
@@ -162,8 +162,31 @@
                 </div>
             </div>
         </div>
+
         <!-- CATEGORY SLIDER -->
-        <div class="filterSlider border-top border-bottom my-5 bg-white container-fluid">
+        <div class="filterSlider border-top border-bottom mb-5 bg-white container-fluid">
+            <!-- Phone searchbar -->
+            <div class="phoneSearch d-lg-none d-md-none d-block">
+                <div class="d-flex flex-row justify-content-between gap-2 align-items-center py-2">
+                    <div
+                        class="searchBox bg-white py-2 px-4 d-flex flex-grow-1 align-items-center gap-2 justify-content-start rounded-pill border shadow">
+                        <div class="iconSide">
+                            <i class="fas fa-search fs-5"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start align-items-start">
+                            <h6 class="my-0">Where to?</h6>
+                            <div class="d-flex flex-row gap-2">
+                                <small class="text-truncate">Anywhere |</small>
+                                <small class="text-truncate">Any week |</small>
+                                <small class="text-truncate">Any guest</small>
+                            </div>
+                        </div>
+                    </div>
+                    <button type=" button" class="btn btn-outline-primary btn-sm rounded-circle" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fas fa-sliders font-29"></i>
+                    </button>
+                </div>
+            </div>
 
             <div class="pt-2 d-flex flex-wrap">
 

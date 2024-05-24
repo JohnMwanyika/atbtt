@@ -18,7 +18,7 @@ form-control:hover,
   transition: 0.2s ease-in;
   position: fixed;
   z-index: 2;
-  top: 30px;
+  top: 0px;
   background: #fff !important;
   box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important;
 }
@@ -52,6 +52,11 @@ form-control:hover,
   .searchBar {
     min-width: 100%;
     margin: auto !important;
+  }
+
+  .filterSlider {
+    position: fixed;
+    top: 0;
   }
   /* .searchItem:hover, */
   form-control:hover,
