@@ -169,7 +169,7 @@
             <div class="phoneSearch d-lg-none d-md-none d-block">
                 <div class="d-flex flex-row justify-content-between gap-2 align-items-center py-2">
                     <div
-                        class="searchBox bg-white py-2 px-4 d-flex flex-grow-1 align-items-center gap-2 justify-content-start rounded-pill border shadow">
+                        class="searchBox bg-white py-2 px-4 d-flex flex-grow-1 align-items-center gap-2 justify-content-start rounded-pill border shadow-sm">
                         <div class="iconSide">
                             <i class="fas fa-search fs-5"></i>
                         </div>
@@ -192,7 +192,8 @@
 
                 <div class="container d-flex justify-content-center flex-grow-1">
                     <!-- prev button -->
-                    <div class="categorySliderBtn rounded categoryPrev bg-secondary text-white px-2 align-self-center">
+                    <div
+                        class="categorySliderBtn d-lg-block d-none rounded categoryPrev bg-secondary text-white px-2 align-self-center">
                         &lt;
                     </div>
 
@@ -200,19 +201,19 @@
                         <a href="#" class="text-decoration-none categoryIcon fw-bold categoryActive">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <i class="fi fi-ts-mug-tea fs-5"></i>
-                                <small>Breakfirst</small>
+                                <small class="text-truncate">Breakfirst</small>
                             </div>
                         </a>
                         <a href="#" class="text-decoration-none categoryIcon fw-bold">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <i class="fi fi-ts-house-tree fs-5"></i>
-                                <small>Tiny house</small>
+                                <small class="text-truncate">Tiny house</small>
                             </div>
                         </a>
                         <a href="#" class="text-decoration-none categoryIcon fw-bold">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <i class="fi fi-ts-water-ladder fs-5"></i>
-                                <small>Amazing Pools</small>
+                                <small class="text-truncate">Amazing Pools</small>
                             </div>
                         </a>
                         <a href="#" class="text-decoration-none categoryIcon fw-bold">
@@ -271,7 +272,8 @@
                         </a>
                     </div>
                     <!-- Next button -->
-                    <div class="categorySliderBtn rounded categoryNext bg-secondary text-white px-2 align-self-center">
+                    <div
+                        class="categorySliderBtn d-lg-block d-none rounded categoryNext bg-secondary text-white px-2 align-self-center">
                         &gt;
                     </div>
                 </div>
@@ -289,8 +291,7 @@
         <!-- phone Footer -->
         <div class="container-fluid border-top py-2 d-lg-none phoneFooter mt-3 bg-white">
             <div class="d-flex justify-content-around">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"
-                    class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                <a href="#" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
                     <i class="fi fi-ts-search-location"></i>
                     <p>Explore</p>
                 </a>
@@ -306,7 +307,7 @@
             </div>
         </div>
         <!-- Property grid -->
-        <div class="property-grid-listing">
+        <div class="property-grid-listing mt-lg-5">
             <div class="property-listing-section">
                 <div class="container-fluid">
 

@@ -52,10 +52,10 @@ $(function () {
             $('.topbar').addClass('fixed-header');
             $('.filterSlider').addClass('stackTop');
             $('.topbar').removeClass('border-bottom');
-            $('.filterSlider').removeClass('border-top');
+            // $('.filterSlider').removeClass('border-top');
         } else {
             $('.topbar').removeClass('fixed-header');
-            $('.filterSlider.d-lg-block').removeClass('stackTop');
+            $('.filterSlider').removeClass('stackTop');
         }
     });
 
@@ -256,7 +256,7 @@ $(function () {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                 }
             },

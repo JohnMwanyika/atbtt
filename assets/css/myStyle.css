@@ -17,10 +17,10 @@ form-control:hover,
 .stackTop {
   transition: 0.2s ease-in;
   position: fixed;
-  z-index: 2;
-  top: 0px;
-  background: #fff !important;
-  box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important;
+  z-index: 1;
+  top: 78px;
+  /* background: #fff !important; */
+  /* box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important; */
 }
 .stackBottom {
   position: fixed;
@@ -32,7 +32,7 @@ form-control:hover,
 .categoryIcon:hover {
   /* background-color: rgb(201, 239, 227); */
   color: royalblue;
-  border-bottom: 2px solid royalblue;
+  border-bottom: 3px solid royalblue;
   transition: transform 0.3s ease-out;
 }
 .categoryActive {
