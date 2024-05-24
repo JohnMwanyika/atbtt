@@ -5,11 +5,16 @@ $(function () {
     // ==============================================================  
     var wind = $(window);
     wind.on("load", function () {
-        var bodyScroll = wind.scrollTop(), navbar = $(".topbar"), categorySlider = $(".filterSlider")
+        var bodyScroll = wind.scrollTop();
+        var navbar = $(".topbar");
+        var categorySlider = $(".filterSlider");
+        // var phoneFooter = $(".phoneFooter");
+
         if (bodyScroll > 40) {
             navbar.addClass("fixed-header")
             if (bodyScroll > 200) {
                 categorySlider.addClass(("fixed-header"))
+                // phoneFooter.addClass(("sticky-bottom"))
             }
         } else {
             navbar.removeClass("sticky-top")
@@ -36,6 +41,8 @@ $(function () {
         if ($(window).scrollTop() >= 200) {
             $('.topbar').addClass('fixed-header');
 
+            $('.phoneFooter').addClass('stackBottom');
+
             $('.filterSlider').addClass('stackTop', function () {
                 $('.topbar').removeClass('border-bottom');
                 $(this).removeClass("border-top")
@@ -43,6 +50,7 @@ $(function () {
         } else {
             $('.topbar').removeClass('fixed-header');
             $('.filterSlider').removeClass('stackTop');
+            $('.phoneFooter').removeClass('stackBottom');
         }
     });
 

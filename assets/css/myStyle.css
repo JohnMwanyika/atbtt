@@ -22,6 +22,12 @@ form-control:hover,
   background: #fff !important;
   box-shadow: 0 0.5rem 1rem rgba(210, 91, 57, 0.2) !important;
 }
+.stackBottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content if necessary */
+}
 
 .categoryIcon:hover {
   /* background-color: rgb(201, 239, 227); */
