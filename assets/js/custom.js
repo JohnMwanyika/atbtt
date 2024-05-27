@@ -226,13 +226,13 @@ $(function () {
 
     // hero Section slider
     $('.heroSlider').slick({
-        autoplay: true,
+        // autoplay: true,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: $('.heroPrev'),
         nextArrow: $('.heroNext'),
-        appendDots: $('.heroSlider'),
+        // appendDots: $('.heroSlider'),
     })
     // ICON SLIDER
     $('.categorySlider').slick({

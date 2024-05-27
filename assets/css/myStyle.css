@@ -53,6 +53,19 @@ form-control:hover,
 /* =======================HERO SECTION========================================== */
 
 @media (max-width: 767.98px) {
+  /* ==============================HERO SECTION============================================== */
+  .heroSlider {
+    min-width: 100% !important;
+  }
+
+  .ticketImage {
+    min-width: 100% !important;
+  }
+  .ticketInfo {
+    min-width: 100% !important;
+  }
+
+  /* ==============================HERO SECTION============================================== */
   .searchItem > .searchItemBox {
     border-right: none !important;
     /* border-bottom: 2px solid #f8f9fa; */
