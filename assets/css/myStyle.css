@@ -44,8 +44,11 @@ form-control:hover,
 .heroItem {
   background-image: url("../images/smalldots.png");
   background-repeat: no-repeat;
-  background-position: center right left;
-  background-size: 10%;
+  background-position: center;
+  background-size: 200px 200px;
+}
+.heroSliderBtn:hover {
+  cursor: pointer;
 }
 /* =======================HERO SECTION========================================== */
 
