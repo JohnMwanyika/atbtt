@@ -40,6 +40,15 @@ form-control:hover,
   border-bottom: 2px solid royalblue;
 }
 
+/* =======================HERO SECTION========================================== */
+.heroItem {
+  background-image: url("../images/smalldots.png");
+  background-repeat: no-repeat;
+  background-position: center right left;
+  background-size: 10%;
+}
+/* =======================HERO SECTION========================================== */
+
 @media (max-width: 767.98px) {
   .searchItem > .searchItemBox {
     border-right: none !important;

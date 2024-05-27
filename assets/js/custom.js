@@ -223,6 +223,15 @@ $(function () {
     //     }
     // });
 
+
+    // hero Section slider
+    $('.heroSlider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.heroPrev'),
+        nextArrow: $('.heroNext'),
+    })
     // ICON SLIDER
     $('.categorySlider').slick({
         autoplay: true,
