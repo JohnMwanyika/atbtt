@@ -232,7 +232,7 @@ $(function () {
         slidesToScroll: 1,
         prevArrow: $('.heroPrev'),
         nextArrow: $('.heroNext'),
-        // appendDots:""
+        appendDots: $('.heroSlider'),
     })
     // ICON SLIDER
     $('.categorySlider').slick({
